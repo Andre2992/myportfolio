@@ -19,7 +19,7 @@ html, body{
 }
 
 
-h1{
+#JM{
     font-size: 4rem;
     color: black;
     position: absolute;
@@ -30,8 +30,15 @@ h1{
 }
 
 #TD{
-    color: white;
+    font-size: 4rem;
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
+
 
 .button{
     display:block;
@@ -51,7 +58,7 @@ h1{
     transform: translateX(-50%);
 }
 
-#button{
+/* .button{
     display:block;
     position: absolute;
     left: 50%;
@@ -67,14 +74,14 @@ h1{
     text-transform: uppercase;
     text-decoration: none;
     transform: translateX(-50%);
-}
+} */
 
 .split.left .button:hover{
     background-color: var(--left-button-hover-color);
     border-color: var(--left-button-hover-color);
 }
 
-.split.right #button:hover{
+.split.right .button:hover{
     background-color: var(--right-button-hover-color);
     border-color: var(--right-button-hover-color);
 }
@@ -150,7 +157,12 @@ h1{
 }
 
 @media (max-width: 800px){
-    h1{
+    #JM{
+        font-size: 2rem;
+    }
+
+    @media (max-width: 800px){
+    #TD{
         font-size: 2rem;
     }
 
